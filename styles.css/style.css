@@ -60,11 +60,17 @@ body {
 }
 
 .input-button {
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(170, 170, 170);
     font-weight: 600;
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.input-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 #main__buttons {
@@ -74,13 +80,19 @@ body {
     gap: 10px;
 }
 
-.button__right, .button__left {
+#button__right, #button__left {
     background-color: #C5990B;
     padding: 12px 30px;
     border: 1px solid #C5990B;
     border-radius: 8px;
     font-weight: 600;
     margin-top: 14px;
+    transition: transform 0.3s ease;
+}
+
+#button__right:hover, #button__left:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .main__content {

@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const pokemonWeight = document.querySelector('.pokemon-weight');
     const pokemonType = document.querySelector('.pokemon-type');
     const pokemonInfos = document.getElementById('pokemon-infos');
-    const buttonLeft = document.querySelector('.button__left');
-    const buttonRight = document.querySelector('.button__right');
+    const buttonLeft = document.getElementById('button__left');
+    const buttonRight = document.getElementById('button__right');
     const buttons = document.getElementById('main__buttons');
     const msgLoading = document.getElementById('loading');
     const msgError = document.getElementById('error');
@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const attButton = () => {
         buttonLeft.disabled = (idPokemonAtual <= 1);
+        buttonLeft.classList.add('hidden-cursor');
     };
 
     const attButtonRight = () => {
