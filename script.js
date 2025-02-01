@@ -35,7 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const preencherPokemonInfo = (pokemon) => {
+        idPokemonAtual = pokemon.id;
+        
+        if (idPokemonAtual <= 649) {
         pokemonImg.src = pokemon['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        } else {
+        pokemonImg.src = pokemon['sprites']['other']['official-artwork']['front_default'] 
+        || pokemon['sprites']['front_default'];
+        }
+
         pokemonName.textContent = `${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1).toLowerCase()}`;
         pokemonID.textContent = `(#${pokemon.id})`;
         pokemonHeight.textContent = `${pokemon.height / 10}m`;
