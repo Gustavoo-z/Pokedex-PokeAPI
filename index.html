@@ -12,7 +12,41 @@
     <main>
         <div class="main">
             <div class="main__container">
-                <h1 class="main__title">Seja bem-vindo a Pokédex</h1>
+                <div class="main__texts">
+                    <h1 class="main__title">Seja bem-vindo a Pokédex</h1>
+                    <h2 class="main__subtitle">Digite o nome ou ID do pokémon que deseja buscar:</h2>
+                </div>
+                <div class="main__input">
+                    <input type="text" class="input" placeholder="Nome ou ID do Pokémon">
+                    <button class="input-button">Buscar</button>
+                </div>
+                <div class="main__content">
+                    <div class="msgs">
+                        <span id="loading" class="hidden">Carregando...</span>
+                        <span id="error" class="hidden">404 NOT FOUND - Pokémon não encontrado!</span>
+                    </div>
+                    <img class="pokemon-img">
+                        <div class="pokemon-data">
+                            <span class="pokemon-name"></span>
+                            <span class="pokemon-id"></span>
+                        </div>
+                </div>
+                <div id="pokemon-infos">
+                    <span>Altura:</span>
+                    <span class="pokemon-height"></span>
+                    <span>| Peso:</span>
+                    <span class="pokemon-weight"></span>
+                    <span>| Tipo:</span>
+                    <span class="pokemon-type"></span>
+                </div>
+                <div id="main__buttons">
+                    <button class="button__left">
+                        Pokémon anterior
+                    </button>
+                    <button class="button__right">
+                        Próximo Pokémon
+                    </button>
+                </div>
             </div>
         </div>
     </main>
