@@ -1,5 +1,6 @@
 @media screen and (max-width: 560px) {
     body {
+        font-family: var(--fonte-principal);
         background-image: none;
         background: linear-gradient(to bottom, #2b3296, #3c69bb, #49b3e4);
     }   
